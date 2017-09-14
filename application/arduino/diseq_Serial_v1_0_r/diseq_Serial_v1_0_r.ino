@@ -207,9 +207,9 @@ void setup()
 
   
   Serial.begin(57600);
-  //SoftPWMBegin();
-    SoftPWM.begin( 60 );
-//    uint16_t status = dof.begin();
+//  SoftPWMBegin();
+    Palatis::SoftPWM.begin( 60 );
+// uint16_t status = dof.begin();
    
   //initialize Shift Register
   pinMode(resetPin, OUTPUT);

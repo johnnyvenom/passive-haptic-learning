@@ -137,7 +137,7 @@ void set_actuators()
     for (int aa = 0; aa < 6; aa++) 
     {
       if(cur_pwm[aa] != prev_pwm[aa]) {
-        SoftPWM.set(pins[aa],cur_pwm[aa]);
+        Palatis::SoftPWM.set(pins[aa],cur_pwm[aa]);
         prev_pwm[aa]=cur_pwm[aa];
         
      if (enable_PWMprint){ 
